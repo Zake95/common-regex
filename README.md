@@ -46,7 +46,7 @@
 `gaozihang-001@gmail.com` 只允许英文字母、数字、下划线、英文句号、以及中划线组成
 
 ```regex
-/^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/
+/^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+){1,2}$/
 ```
 
 ![email](images/email.png)
@@ -54,7 +54,7 @@
 `高子航001Abc@bowbee.com.cn` 名称允许汉字、字母、数字，域名只允许英文域名
 
 ```regex
-/^[A-Za-z0-9\u4e00-\u9fa5]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/
+/^[A-Za-z0-9\u4e00-\u9fa5]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+){1,2}$/
 ```
 
 ![email](images/email2.png)
