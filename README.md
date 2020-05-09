@@ -49,7 +49,7 @@
 /^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+){1,2}$/
 ```
 
-![email](images/email.png)
+![email](images/email_en.png)
 
 `高子航001Abc@bowbee.com.cn` 名称允许汉字、字母、数字，域名只允许英文域名
 
@@ -57,7 +57,7 @@
 /^[A-Za-z0-9\u4e00-\u9fa5]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+){1,2}$/
 ```
 
-![email](images/email2.png)
+![email](images/email_zh.png)
 
 ## 电话
 
@@ -67,15 +67,15 @@
 /^1([358][0-9]|4[579]|66|7[0135678]|9[89])[0-9]{8}$/
 ```
 
-![phone](images/phone.png)
+![phone](images/m_phone.png)
 
 `XXX-XXXXXXX` `XXXX XXXXXXXX` `XXXXXXXXXXXX` 国内固定电话（11位或者12位）
 
 ```regex
-/(0[1-9]\d)(-|\s)?(\d{8})|(0[1-9]\d{2})(-|\s)?(\d{7,8})/
+/(0[1-9]\d)(-|\s)?(\d{8})$|(0[1-9]\d{2})(-|\s)?(\d{7,8})$/
 ```
 
-![email](images/phone2.png)
+![email](images/phone.png)
 
 ## 身份证号
 
@@ -85,7 +85,7 @@
 /^(^[1-9]\d{7}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}$)|(^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])((\d{4})|\d{3}[Xx])$)$/
 ```
 
-![IDnumber](images/IDnumber.png)
+![IDnumber](images/IDNumber.png)
 
 ## QQ号
 
@@ -102,7 +102,7 @@
 `1466940130` 微信号(支持微信号（不是微信昵称）和手机号)
 
 ```regex
-/^[a-zA-Z]([-_a-zA-Z0-9]{5,19})+$|^1([358][0-9]|4[579]|66|7[0135678]|9[89])[0-9]{8}$/
+/^[a-zA-Z]([-_a-zA-Z0-9]{5,19})$|^1([358][0-9]|4[579]|66|7[0135678]|9[89])[0-9]{8}$/
 ```
 
 ![wechat](images/wechat.png)
